@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bella Cucina — Restaurante italiano autêntico em São Paulo. Massas artesanais, vinhos selecionados e ambiente acolhedor. Reserve sua mesa para uma experiência gastronômica inesquecível.">
+  <meta name="keywords" content="restaurante italiano, massa artesanal, pizza, restaurante São Paulo, jantar romântico, culinária italiana">
+  <meta name="author" content="Bella Cucina">
+  <meta property="og:title" content="Bella Cucina | Restaurante Italiano Autêntico">
+  <meta property="og:description" content="A autêntica cozinha italiana no coração de São Paulo. Reserve sua mesa agora.">
+  <meta property="og:type" content="restaurant">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://bellacucina.com.br">
+  <title>Bella Cucina | Restaurante Italiano — São Paulo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Bella Cucina",
+    "description": "Restaurante italiano autêntico com massas artesanais e vinhos selecionados",
+    "servesCuisine": "Italian",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Augusta, 890",
+      "addressLocality": "São Paulo",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
+    },
+    "telephone": "+5511995554433",
+    "openingHours": ["Tu-Su 12:00-15:00", "Tu-Su 19:00-23:00"]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#" class="nav__logo">
+        <span class="logo-icon">🍝</span>
+        Bella <em>Cucina</em>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#menu">Cardápio</a></li>
+        <li><a href="#historia">Nossa História</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <a href="#reserva" class="btn btn--primary nav__cta">Reservar Mesa</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <span class="hero__label reveal">Desde 1998 — Tradição italiana em São Paulo</span>
+      <h1 class="hero__title reveal">Sabores que contam<br><em>histórias de família.</em></h1>
+      <p class="hero__desc reveal">Massas artesanais feitas à mão todos os dias, molhos cozidos por horas e vinhos criteriosamente selecionados de regiões icônicas da Itália.</p>
+      <div class="hero__actions reveal">
+        <a href="#reserva" class="btn btn--primary btn--lg">Reservar uma Mesa</a>
+        <a href="#menu" class="btn btn--ghost btn--lg">Ver Cardápio</a>
+      </div>
+      <div class="hero__badges reveal">
+        <div class="badge-item"><span>🏆</span>Melhor Italiano SP 2023</div>
+        <div class="badge-sep">·</div>
+        <div class="badge-item"><span>⭐</span>4.9 no Google</div>
+        <div class="badge-sep">·</div>
+        <div class="badge-item"><span>🍷</span>+200 rótulos de vinho</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS -->
+  <section class="diferenciais">
+    <div class="container diferenciais__grid">
+      <div class="diferencial reveal">
+        <span class="diferencial__icon">🌿</span>
+        <h3>Ingredientes Frescos</h3>
+        <p>Tomates San Marzano importados, queijos DOP e azeites extra virgem de produtores artesanais.</p>
+      </div>
+      <div class="diferencial reveal">
+        <span class="diferencial__icon">👨‍🍳</span>
+        <h3>Chef Italiano</h3>
+        <p>Nossa equipe foi formada em Bolonha e Nápoles. Cada prato carrega a autenticidade da nonna italiana.</p>
+      </div>
+      <div class="diferencial reveal">
+        <span class="diferencial__icon">🍷</span>
+        <h3>Adega Exclusiva</h3>
+        <p>Mais de 200 rótulos selecionados por nosso sommelier, incluindo raridades do Chianti e Barolo.</p>
+      </div>
+      <div class="diferencial reveal">
+        <span class="diferencial__icon">🌹</span>
+        <h3>Ambiente Romântico</h3>
+        <p>Iluminação suave, décor clássico e música ao vivo às sextas e sábados para tornar cada visita especial.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="section menu" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Il Menù</span>
+        <h2>Nossos <em>destaques</em></h2>
+        <p>Uma seleção dos pratos mais amados pelos nossos clientes, preparados com receitas tradicionais e ingredientes premium.</p>
+      </div>
+      <div class="menu__tabs">
+        <button class="menu-tab active" data-cat="massas">Massas</button>
+        <button class="menu-tab" data-cat="pizzas">Pizzas</button>
+        <button class="menu-tab" data-cat="entradas">Entradas</button>
+        <button class="menu-tab" data-cat="sobremesas">Sobremesas</button>
+      </div>
+      <div class="menu__grid" id="menuGrid">
+        <!-- Massas (default visible) -->
+        <article class="menu-card" data-cat="massas">
+          <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=500&q=80" alt="Tagliatelle al Ragù" loading="lazy" width="500" height="360">
+          <div class="menu-card__body">
+            <div class="menu-card__meta"><span class="menu-card__cat">Massa</span><span class="menu-card__price">R$ 58</span></div>
+            <h3>Tagliatelle al Ragù</h3>
+            <p>Tagliatelle artesanal com ragù bolonhês cozido por 8 horas, parmesão Reggiano DOP e manjericão fresco.</p>
+          </div>
+        </article>
+        <article class="menu-card" data-cat="massas">
+          <img src="https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?w=500&q=80" alt="Cacio e Pepe" loading="lazy" width="500" height="360">
+          <div class="menu-card__body">
+            <div class="menu-card__meta"><span class="menu-card__cat">Massa</span><span class="menu-card__price">R$ 52</span></div>
+            <h3>Cacio e Pepe</h3>
+            <p>Tonnarelli romano com pecorino DOP, parmesão e pimenta-do-reino moída na hora. Simples e perfeito.</p>
+          </div>
+        </article>
+        <article class="menu-card" data-cat="massas">
+          <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=500&q=80" alt="Lasagna della Nonna" loading="lazy" width="500" height="360">
+          <div class="menu-card__body">
+            <div class="menu-card__meta"><span class="menu-card__cat">Massa</span><span class="menu-card__price">R$ 64</span></div>
+            <h3>Lasagna della Nonna</h3>
+            <p>Lasanha clássica com camadas de ragù, béchamel cremoso e muçarela de búfala gratinada no forno.</p>
+          </div>
+        </article>
+        <!-- Pizzas -->
+        <article class="menu-card hidden" data-cat="pizzas">
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=80" alt="Margherita DOC" loading="lazy" width="500" height="360">
+          <div class="menu-card__body">
+            <div class="menu-card__meta"><span class="menu-card__cat">Pizza</span><span class="menu-card__price">R$ 62</span></div>
+            <h3>Margherita DOC</h3>
+            <p>Molho de tomate San Marzano, muçarela de búfala DOP, manjericão e azeite extra virgem. A clássica de Nápoles.</p>
+          </div>
+        </article>
+        <article class="menu-card hidden" data-cat="pizzas">
+          <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&q=80" alt="Prosciutto e Rucola" loading="lazy" width="500" height="360">
+          <div class="menu-card__body">
+            <div class="menu-card__meta"><span class="menu-card__cat">Pizza</span><span class="menu-card__price">R$ 78</span></div>
+            <h3>Prosciutto e Rucola</h3>
+            <p>Base de muçarela, presunto San Daniele, rúcula fresca, parmesão Reggiano e tomates grape ao sair do forno.</p>
+          </div>
+        </article>
+        <article class="menu-card hidden" data-cat="pizzas">
+          <img src="https://images.unsplash.com/photo-1576458088814-6b2d89e1ca0a?w=500&q=80" alt="Quattro Formaggi" loading="lazy" width="500" height="360">
+          <div class="menu-card__body">
+            <div class="menu-card__meta"><span class="menu-card__cat">Pizza</span><span class="menu-card__price">R$ 72</span></div>
+            <h3>Quattro Formaggi</h3>
+            <p>Muçarela, gorgonzola, fontina e parmesão sobre uma base de creme de alho. Para os amantes de queijo.</p>
+          </div>
+        </article>
+        <!-- Entradas -->
+        <article class="menu-card hidden" data-cat="entradas">
+          <img src="https://images.unsplash.com/photo-1551183053-bf91798d047c?w=500&q=80" alt="Bruschetta al Pomodoro" loading="lazy" width="500" height="360">
+          <div class="menu-card__body">
+            <div class="menu-card__meta"><span class="menu-card__cat">Entrada</span><span class="menu-card__price">R$ 32</span></div>
+            <h3>Bruschetta al Pomodoro</h3>
+            <p>Pão de fermentação natural tostado, tomates frescos, alho, manjericão e azeite. O começo perfeito.</p>
+          </div>
+        </article>
+        <article class="menu-card hidden" data-cat="entradas">
+          <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=500&q=80" alt="Carpaccio di Manzo" loading="lazy" width="500" height="360">
+          <div class="menu-card__body">
+            <div class="menu-card__meta"><span class="menu-card__cat">Entrada</span><span class="menu-card__price">R$ 48</span></div>
+            <h3>Carpaccio di Manzo</h3>
+            <p>Filé mignon fatiado finamente, rúcula, alcaparras, parmesão laminado e azeite trufado.</p>
+          </div>
+        </article>
+        <article class="menu-card hidden" data-cat="entradas">
+          <img src="https://images.unsplash.com/photo-1608039829572-78524f79c4c7?w=500&q=80" alt="Burrata" loading="lazy" width="500" height="360">
+          <div class="menu-card__body">
+            <div class="menu-card__meta"><span class="menu-card__cat">Entrada</span><span class="menu-card__price">R$ 56</span></div>
+            <h3>Burrata Pugliese</h3>
+            <p>Burrata cremosa importada, tomates heritage marinados, pesto de manjericão e focaccia artesanal.</p>
+          </div>
+        </article>
+        <!-- Sobremesas -->
+        <article class="menu-card hidden" data-cat="sobremesas">
+          <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=500&q=80" alt="Tiramisù" loading="lazy" width="500" height="360">
+          <div class="menu-card__body">
+            <div class="menu-card__meta"><span class="menu-card__cat">Sobremesa</span><span class="menu-card__price">R$ 34</span></div>
+            <h3>Tiramisù della Casa</h3>
+            <p>A receita original com mascarpone, savoiardi, espresso moka e cacau da Sicília. Inesquecível.</p>
+          </div>
+        </article>
+        <article class="menu-card hidden" data-cat="sobremesas">
+          <img src="https://images.unsplash.com/photo-1488477181228-c1b43b3ea498?w=500&q=80" alt="Panna Cotta" loading="lazy" width="500" height="360">
+          <div class="menu-card__body">
+            <div class="menu-card__meta"><span class="menu-card__cat">Sobremesa</span><span class="menu-card__price">R$ 28</span></div>
+            <h3>Panna Cotta ai Frutti</h3>
+            <p>Creme de baunilha com calda de frutas vermelhas frescas e hortelã. Suave, leve e delicioso.</p>
+          </div>
+        </article>
+        <article class="menu-card hidden" data-cat="sobremesas">
+          <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?w=500&q=80" alt="Cannoli Siciliani" loading="lazy" width="500" height="360">
+          <div class="menu-card__body">
+            <div class="menu-card__meta"><span class="menu-card__cat">Sobremesa</span><span class="menu-card__price">R$ 30</span></div>
+            <h3>Cannoli Siciliani</h3>
+            <p>Casquinha crocante recheada com ricota adocicada, pistaches de Bronte e gotas de chocolate amargo.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HISTÓRIA -->
+  <section class="section historia" id="historia">
+    <div class="container historia__inner">
+      <div class="historia__content reveal">
+        <span class="section-tag">La Nostra Storia</span>
+        <h2>Uma família italiana<br>em <em>terras brasileiras.</em></h2>
+        <p>Em 1998, a família Rossetti deixou Bolonha trazendo na mala as receitas da avó Maria, um sonho e muita paixão pela boa mesa. O que começou como uma pequena trattoria na Vila Madalena cresceu e se tornou referência da culinária italiana em São Paulo.</p>
+        <p>Hoje, o Chef Marco Rossetti comanda a cozinha mantendo viva a essência que faz a Bella Cucina tão especial: ingredientes de qualidade, técnica apurada e o calor de uma refeição em família.</p>
+        <blockquote>
+          "Cozinhar é um ato de amor. Cada prato que sai da nossa cozinha carrega um pedaço da nossa história."
+          <cite>— Marco Rossetti, Chef e fundador</cite>
+        </blockquote>
+        <a href="#reserva" class="btn btn--primary">Viver essa Experiência</a>
+      </div>
+      <div class="historia__images reveal">
+        <img class="historia__img-main" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=700&q=80" alt="Interior do restaurante Bella Cucina" loading="lazy" width="700" height="520">
+        <img class="historia__img-secondary" src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=400&q=80" alt="Chef preparando massa artesanal" loading="lazy" width="400" height="300">
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section class="section galeria" id="galeria">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Galeria</span>
+        <h2>Momentos <em>especiais</em></h2>
+      </div>
+      <div class="galeria__grid">
+        <figure class="galeria__item galeria__item--wide reveal"><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=900&q=80" alt="Ambiente do restaurante" loading="lazy" width="900" height="400"><figcaption>O ambiente acolhedor da Bella Cucina</figcaption></figure>
+        <figure class="galeria__item reveal"><img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=450&q=80" alt="Massa artesanal" loading="lazy" width="450" height="350"><figcaption>Massa feita à mão</figcaption></figure>
+        <figure class="galeria__item reveal"><img src="https://images.unsplash.com/photo-1510626176961-4b57d4fbad03?w=450&q=80" alt="Seleção de vinhos" loading="lazy" width="450" height="350"><figcaption>Nossa adega exclusiva</figcaption></figure>
+        <figure class="galeria__item reveal"><img src="https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=450&q=80" alt="Prato especial" loading="lazy" width="450" height="350"><figcaption>Pratos elaborados com cuidado</figcaption></figure>
+        <figure class="galeria__item reveal"><img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=450&q=80" alt="Mesa posta" loading="lazy" width="450" height="350"><figcaption>Mesa preparada para momentos especiais</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVA -->
+  <section class="section reserva" id="reserva">
+    <div class="container reserva__inner">
+      <div class="reserva__info reveal">
+        <span class="section-tag">Faça sua Reserva</span>
+        <h2>Reserve sua mesa<br>para uma noite <em>especial.</em></h2>
+        <p>Garanta seu lugar e venha viver uma experiência gastronômica inesquecível. Aceitamos reservas com até 30 dias de antecedência.</p>
+        <div class="reserva__horarios">
+          <div class="horario-item">
+            <strong>Almoço</strong>
+            <span>Terça a Domingo · 12h às 15h</span>
+          </div>
+          <div class="horario-item">
+            <strong>Jantar</strong>
+            <span>Terça a Domingo · 19h às 23h</span>
+          </div>
+          <div class="horario-item">
+            <strong>Segunda-feira</strong>
+            <span>Fechado · Descansando a família 😄</span>
+          </div>
+        </div>
+        <p class="reserva__note">Para grupos acima de 10 pessoas, entre em contato direto pelo WhatsApp.</p>
+      </div>
+      <form class="reserva__form reveal" id="reservaForm" novalidate>
+        <h3>Reservar Mesa</h3>
+        <div class="form-group">
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome" autocomplete="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seu@email.com" autocomplete="email" required>
+        </div>
+        <div class="form-group">
+          <label for="telefone">Telefone / WhatsApp</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" autocomplete="tel" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="data">Data</label>
+            <input type="date" id="data" name="data" required>
+          </div>
+          <div class="form-group">
+            <label for="hora">Horário</label>
+            <select id="hora" name="hora" required>
+              <option value="">Selecione</option>
+              <optgroup label="Almoço">
+                <option>12:00</option><option>12:30</option><option>13:00</option><option>13:30</option>
+              </optgroup>
+              <optgroup label="Jantar">
+                <option>19:00</option><option>19:30</option><option>20:00</option><option>20:30</option><option>21:00</option>
+              </optgroup>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="pessoas">Número de pessoas</label>
+          <select id="pessoas" name="pessoas" required>
+            <option value="">Quantas pessoas?</option>
+            <option>1 pessoa</option><option>2 pessoas</option><option>3 pessoas</option><option>4 pessoas</option>
+            <option>5 pessoas</option><option>6 pessoas</option><option>7 pessoas</option><option>8 pessoas</option><option>9 pessoas</option><option>10 pessoas</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="ocasiao">Ocasião especial (opcional)</label>
+          <select id="ocasiao" name="ocasiao">
+            <option value="">Selecione (opcional)</option>
+            <option>Aniversário</option><option>Casamento / Noivado</option>
+            <option>Jantar Romântico</option><option>Reunião de Negócios</option><option>Celebração Familiar</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Confirmar Reserva</button>
+        <p class="form-note">*Confirmação por e-mail em até 2 horas. Reserva válida por 15 minutos após o horário agendado.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="section depoimentos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">O que dizem nossos clientes</span>
+        <h2>Experiências <em>memoráveis</em></h2>
+      </div>
+      <div class="depoimentos__grid">
+        <article class="depo-card reveal">
+          <div class="depo-card__stars">★★★★★</div>
+          <p>"O tiramisù deles deveria ser patrimônio imaterial. Melhor restaurante italiano que já fui em São Paulo. A massa artesanal derrete na boca. Voltarei muitas vezes!"</p>
+          <footer><strong>Fernanda Oliveira</strong><small>Google Maps · há 2 semanas</small></footer>
+        </article>
+        <article class="depo-card reveal">
+          <div class="depo-card__stars">★★★★★</div>
+          <p>"Pedimos o menu degustação completo para nosso aniversário de casamento e foi uma experiência inesquecível. O sommelier indicou vinhos perfeitos para cada prato."</p>
+          <footer><strong>Ricardo & Paula Costa</strong><small>TripAdvisor · há 1 mês</small></footer>
+        </article>
+        <article class="depo-card reveal">
+          <div class="depo-card__stars">★★★★★</div>
+          <p>"Ambiente lindo, atendimento impecável e comida de dar água na boca. A Lasagna della Nonna é um crime de tão boa. Reservem com antecedência pois lota sempre!"</p>
+          <footer><strong>Alessandro Bianchi</strong><small>Google Maps · há 3 semanas</small></footer>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contato">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#" class="nav__logo"><span class="logo-icon">🍝</span>Bella <em>Cucina</em></a>
+        <p>A autêntica culinária italiana no coração de São Paulo. Uma tradição de família desde 1998.</p>
+        <div class="footer__social">
+          <a href="#" class="social-link" aria-label="Instagram">IG</a>
+          <a href="#" class="social-link" aria-label="Facebook">FB</a>
+          <a href="https://wa.me/5511995554433" class="social-link" aria-label="WhatsApp">WA</a>
+        </div>
+      </div>
+      <nav class="footer__nav">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#menu">Cardápio</a></li>
+          <li><a href="#historia">Nossa História</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#reserva">Reservas</a></li>
+        </ul>
+      </nav>
+      <address class="footer__contact">
+        <h4>Visite-nos</h4>
+        <p>📍 Rua Augusta, 890<br>Consolação — São Paulo, SP</p>
+        <p>📞 <a href="tel:+5511995554433">(11) 99555-4433</a></p>
+        <p>✉️ <a href="mailto:reservas@bellacucina.com.br">reservas@bellacucina.com.br</a></p>
+        <p>🕐 Ter–Dom: Almoço 12h–15h<br>Jantar 19h–23h</p>
+      </address>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2024 Bella Cucina. Todos os direitos reservados.</p>
+      <p>Desenvolvido por <a href="https://www.linkedin.com/in/viniciusfelipepereira" target="_blank" rel="noopener">Vinicius Felipe</a></p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5511995554433" class="whatsapp-fab" aria-label="WhatsApp" target="_blank" rel="noopener">
+    <svg width="28" height="28" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
